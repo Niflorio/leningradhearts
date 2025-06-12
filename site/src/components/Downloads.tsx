@@ -77,7 +77,7 @@ const Downloads: React.FC = () => {
           <div className="card">
             <h3 className="card-title">Журнал</h3>
             <p className="card-description">
-              Основное издание "Неугасаемые сердца под пылающим небом"
+              Первое издание{'\n'}"Неугасаемые сердца под{'\u00A0'}пылающим небом"
             </p>
             <a 
               href="/journal.pdf" 

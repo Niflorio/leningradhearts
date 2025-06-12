@@ -9,6 +9,7 @@ export const globalStyles = css`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+      
   }
   
   body {
@@ -28,6 +29,6 @@ export const globalStyles = css`
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 50px;
   }
 `;

@@ -16,15 +16,17 @@ const Footer: React.FC = () => {
     }
     
     .journal-title {
-      font-size: 2.2rem;
+      font-size: 1.3rem;
       margin-bottom: 15px;
       color: white;
+      opacity: 0.75;
     }
     
     .motto {
       font-size: 1.3rem;
       margin-bottom: 30px;
       color: ${colors.warm.light};
+      opacity: 0.75;
     }
     
     .copyright {
@@ -33,16 +35,18 @@ const Footer: React.FC = () => {
       border-top: 1px solid ${colors.cold.secondary};
       padding-top: 20px;
       margin-top: 30px;
+      opacity: 0.75;
+      font-style: italic;
     }
   `;
 
   return (
     <footer css={footerStyle}>
       <div className="container footer-content">
-        <div className="journal-title">Неугасаемые сердца под пылающим небом</div>
+        <div className="journal-title">Неугасаемые сердца{'\n'}под{'\u00A0'}пылающим небом</div>
         <div className="motto">Искусство в тёмное время</div>
         <div className="copyright">
-          © 2025 Распространяется по лицензии Creative Commons CC BY-NC-ND
+          © 2025 Распространяется по лицензии CC BY-NC-SA 4.0
         </div>
       </div>
     </footer>
