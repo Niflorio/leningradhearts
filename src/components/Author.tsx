@@ -19,6 +19,12 @@ const Author: React.FC = () => {
     100% { opacity: 1; }
   `;
 
+  const glow = keyframes`
+  0% { text-shadow: 0 0 2px ${colors.warm.primary}, 0 0 3px ${colors.warm.primary}; }
+  50% { text-shadow: 0 0 5px ${colors.warm.accent}, 0 0 6px ${colors.warm.accent}; }
+  100% { text-shadow: 0 0 2px ${colors.warm.primary}, 0 0 3px ${colors.warm.primary}; }
+  `;
+
   const authorStyle = css`
     padding: 150px 0;
     background: linear-gradient(
@@ -58,6 +64,11 @@ const Author: React.FC = () => {
       display: inline-block;
       letter-spacing: 0.1rem;
       
+    }
+    .author-link {
+      &:hover {
+        animation: ${glow} 3s infinite;
+      }
     }
     
     .cursor {
@@ -133,7 +144,7 @@ const Author: React.FC = () => {
     <section ref={sectionRef} css={authorStyle}>
       <div className="container author-content">
         <h3>Создатель проекта и автор журнала</h3>
-        <a href="https://t.me/niflorio"> 
+        <a className='author-link' href="https://t.me/niflorio"> 
           <div className="author-name">
             {currentText}
             <span className="cursor" />
