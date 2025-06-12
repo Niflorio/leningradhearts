@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
         <div className="journal-title">Неугасаемые сердца{'\n'}под{'\u00A0'}пылающим небом</div>
         <div className="motto">Искусство в тёмное время</div>
         <div className="copyright">
-          © 2025 Распространяется по лицензии CC BY-NC-SA 4.0
+          © 2025 Распространяется по лицензии CC{'\u00A0'}BY-NC-SA{'\u00A0'}4.0
         </div>
       </div>
     </footer>

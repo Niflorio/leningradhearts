@@ -18,6 +18,10 @@ const About: React.FC = () => {
       font-size: 2.5rem;
       color: ${colors.warm.dark};
       margin-bottom: 30px;
+
+      @media (max-width: 992px) {
+        font-size: 1.8rem;
+      }
     }
     
     p {
@@ -25,6 +29,9 @@ const About: React.FC = () => {
       color: ${colors.cold.secondary};
       margin-bottom: 20px;
       line-height: 1.8;
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
   `;
 
@@ -33,12 +40,11 @@ const About: React.FC = () => {
       <div className="container about-content">
         <h2>О проекте</h2>
         <p>
-          Этот сайт создан для распространения учебно-методических материалов,
+          Этот сайт создан для{'\u00A0'}распространения учебно-методических материалов,
           посвященных изучению исторических событий блокады Ленинграда.
         </p>
         <p>
-          Наша цель - помочь педагогам передать подрастающему поколению 
-          глубокое понимание исторических событий.
+          Цель проекта — Воспитание ценностного отношения к{'\u00A0'}историческому наследию Великой{'\u00A0'}Отечественной{'\u00A0'}войны.
         </p>
       </div>
     </section>

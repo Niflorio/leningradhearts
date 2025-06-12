@@ -13,6 +13,10 @@ const Downloads: React.FC = () => {
       font-size: 2.5rem;
       color: ${colors.warm.dark};
       margin-bottom: 50px;
+
+      @media (max-width: 992px) {
+        font-size: 1.8rem;
+      }
     }
     
     .download-cards {
